@@ -19,3 +19,9 @@ def mask_account_card(type_number: str) -> str:
         str_type_list = " ".join(type_list)
         type_mask_number = str_type_list + " " + mask_card_number
         return type_mask_number
+
+
+def get_date(date_1: str) -> str:
+    """Функция, которая меняет формат даты"""
+    date_2 = date_1[8:10] + "." + date_1[5:7] + "." + date_1[:4]
+    return date_2
