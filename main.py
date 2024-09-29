@@ -1,6 +1,5 @@
-from src.widget import get_date, mask_account_card
-
 from src.masks import get_mask_account, get_mask_card_number
+from src.widget import get_date, mask_account_card
 
 print(mask_account_card("Maestro 1596837868705199"))
 print(mask_account_card("Счет 64686473678894779589"))
