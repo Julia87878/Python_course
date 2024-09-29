@@ -34,6 +34,8 @@ print(
     )
 )
 
+
+
 print(mask_account_card("Maestro 1596837868705199"))
 print(mask_account_card("Счет 64686473678894779589"))
 print(mask_account_card("MasterCard 7158300734726758"))
