@@ -1,6 +1,6 @@
 def filter_by_currency(transactions, currency):
     """Генератор, который фильтрует транзакции по валюте"""
-    if transactions == []:
+    if transactions == [ ]:
         yield "Нет транзакций"
     else:
         for transaction in transactions:
@@ -10,7 +10,7 @@ def filter_by_currency(transactions, currency):
 
 def transaction_descriptions(transactions):
     """Генератор, который возвращает описание каждой операции по очереди"""
-    if transactions == []:
+    if transactions == [ ]:
         yield "Нет транзакций"
     else:
         for transaction in transactions:
@@ -19,7 +19,8 @@ def transaction_descriptions(transactions):
 
 
 def card_number_generator(start, stop):
-    """Генератор, который генерирует номера банковских карт в заданном диапазоне"""
+    """Генератор, который генерирует номера банковских карт в заданном диапазоне(от 0000 0000 0000 0001
+    до 9999 9999 9999 9999"""
     if start < 1 or stop > 9999999999999999:
         yield "Ошибка ввода"
     else:
