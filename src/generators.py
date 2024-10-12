@@ -1,6 +1,6 @@
 def filter_by_currency(transactions, currency):
     """Генератор, который фильтрует транзакции по валюте"""
-    if transactions == [ ]:
+    if transactions == []:
         yield "Нет транзакций"
     else:
         for transaction in transactions:
@@ -10,7 +10,7 @@ def filter_by_currency(transactions, currency):
 
 def transaction_descriptions(transactions):
     """Генератор, который возвращает описание каждой операции по очереди"""
-    if transactions == [ ]:
+    if transactions == []:
         yield "Нет транзакций"
     else:
         for transaction in transactions:
