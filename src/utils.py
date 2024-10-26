@@ -1,6 +1,5 @@
 import json
 import logging
-import os
 from json import JSONDecodeError
 
 logging.basicConfig(
@@ -34,24 +33,3 @@ def get_financial_transactions(path: str) -> list:
         print("Ошибка: фaйл не найден.")
         logger.error("Ошибка: фaйл не найден.")
         return []
-
-
-if __name__ == "__main__":
-    print(
-        get_financial_transactions(os.path.join(os.path.dirname(os.path.dirname(__file__)), "data", "operations.json"))
-    )
-    print(
-        get_financial_transactions(
-            os.path.join(os.path.dirname(os.path.dirname(__file__)), "data", "operations_2.json")
-        )
-    )
-    print(
-        get_financial_transactions(
-            os.path.join(os.path.dirname(os.path.dirname(__file__)), "data", "operations_3.json")
-        )
-    )
-    print(
-        get_financial_transactions(
-            os.path.join(os.path.dirname(os.path.dirname(__file__)), "data", "operations_4.json")
-        )
-    )
