@@ -23,8 +23,8 @@ def mask_account_card(type_number: str) -> str:
 
 def get_date(date_1: str) -> str:
     """Функция, которая меняет формат даты"""
-    if len(date_1) == 26:
+    if len(date_1) >= 10:
         date_2 = date_1[8:10] + "." + date_1[5:7] + "." + date_1[:4]
         return date_2
-    else:
+    elif len(date_1) < 10:
         return "Некорректный формат даты"
